@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-<title></title>
-</head>
-<body>
-
-<h1>Admin page</h1>
-
-
-</body>
+  <head>
+   @include('admin.css')
+  </head>
+  <body>
+    <header class="header">
+      @include('admin.header')
+    </header>
+    <div class="d-flex align-items-stretch">
+      <!-- Sidebar Navigation-->
+      @include('admin.sidebar')
+        </div>
+       @include('admin.body')
+      @include('admin.footer')
 </html>
-
