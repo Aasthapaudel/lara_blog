@@ -171,7 +171,8 @@
             </div>
             <!-- Megamenu end     -->
             <!-- Languages dropdown    -->
-            <div class="list-inline-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#"
+            <!-- /////////////////////////////////////////////////////////// -->
+            <!-- <div class="list-inline-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     class="nav-link language dropdown-toggle"><img src="admincss/img/flags/16/GB.png"
                         alt="English"><span class="d-none d-sm-inline-block">English</span></a>
@@ -179,7 +180,8 @@
                         <img src="admincss/img/flags/16/DE.png" alt="English" class="mr-2"><span>German</span></a><a
                         rel="nofollow" href="#" class="dropdown-item"> <img src="admincssimg/flags/16/FR.png"
                             alt="English" class="mr-2"><span>French </span></a></div>
-            </div>
+            </div> -->
+            <!-- ////////////////////////////////////////////// -->
             <!-- Log out               -->
             <div class="list-inline-item logout">
                 <!-- <a id="logout" href="login.html" class="nav-link">Logout <i class="icon-logout"></i></a></div> -->
