@@ -41,7 +41,12 @@ text-align:center;
         </div>
 
         <div class="page-content">
-
+@if(session()->has('message'))
+<div class ="alert alert-danger">
+    <button type="button" class ="close" data-dismiss="alert" aria-hidden="true">x</button>
+    {{session()->get('message')}}
+</div>
+@endif
           <h1 class ="title_deg">All Post</h1>
 
           <table class="table_deg">
@@ -52,6 +57,7 @@ text-align:center;
                 <th>Post status</th>
                 <th>Usertype</th>
                 <th>Image</th>
+                <th>Delete</th>
             </tr>
             @foreach($post as $post)
             <tr>
@@ -62,6 +68,9 @@ text-align:center;
                 <td>{{$post->usertype}}</td>
                 <td>
                     <img class="img_deg" src="postimage/{{$post->image}}">
+                </td>
+                <td>
+                    <a href="{{url('delete_post',$post->id)}}" class="btn btn-danger" onclick="return confirm('Are you sure to Delete This ?')">Delete</a>
                 </td>
             </tr>
 @endforeach
