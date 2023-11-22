@@ -11,6 +11,7 @@
       <!-- Sidebar Navigation-->
       @include('admin.sidebar')
         </div>
+        
        @include('admin.body')
       @include('admin.footer')
 </html>

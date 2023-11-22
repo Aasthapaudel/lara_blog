@@ -63,6 +63,7 @@
                 <th>Usertype</th>
                 <th>Image</th>
                 <th>Delete</th>
+                <th>Edit</th>
             </tr>
             @foreach($post as $post)
             <tr>
@@ -77,8 +78,10 @@
                 <td>
                     <!-- <a href="{{url('delete_post',$post->id)}}" class="btn btn-danger" onclick="return confirm('Are you sure to Delete This ?')">Delete</a> -->
                     <a href="{{url('delete_post',$post->id)}}" class="btn btn-danger" onclick="confirmation(event)">Delete</a>
-                    <!-- <a href="{{url('delete_post',$post->id)}}" class="btn btn-danger"
-                        onclick="confirmation(event)">Delete</a> -->
+
+                </td>
+                <td>
+                    <a href="{{url('edit_page',$post->id)}}" class="btn btn-success">Edit</a>
                 </td>
             </tr>
             @endforeach
