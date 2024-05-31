@@ -13,32 +13,28 @@ class HomeController extends Controller
     //
     public function index()
     {
-        if(Auth::id())
-        {
+        if (Auth::id()) {
 
-            $post=POST::all();
+            $post = POST::all();
 
-            $usertype=Auth()->user()->usertype;
+            $usertype = Auth()->user()->usertype;
 
 
-            if($usertype=='user')
-            {
-                return view('home.home',compact('post'));
+            if ($usertype == 'user') {
+                return view('home.home', compact('post'));
 
-            }
-            else if($usertype=='admin')
-            {
-                return view ('admin.adminhome');
-            }
-            else{
+            } else if ($usertype == 'admin') {
+                return view('admin.adminhome');
+            } else {
                 return redirect()->back();
             }
 
         }
     }
-    public function homepage() {
-        $post =POST::all();
-        return view('home.home',compact('post'));
+    public function homepage()
+    {
+        $post = POST::all();
+        return view('home.home', compact('post'));
 
     }
 
@@ -48,4 +44,9 @@ class HomeController extends Controller
     {
         return view("post");
     }
+    public function post_details($id)
+    {
+        return view('home.post_details');
+    }
+
 }
